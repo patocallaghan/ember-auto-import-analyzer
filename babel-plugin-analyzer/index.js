@@ -56,23 +56,3 @@ module.exports = function() {
 // Provide the path to the package's base directory for caching with broccoli
 // Ref: https://github.com/babel/broccoli-babel-transpiler#caching
 module.exports.baseDir = () => path.resolve(__dirname, '..');
-// const template  = require('babel-template');
-// const syntax = require('babel-plugin-syntax-dynamic-import');
-// const buildImport = template(`emberAutoImportDynamic(SOURCE)`);
-
-// module.exports = () => ({
-//   inherits: syntax,
-//   visitor: {
-//     Import(path) {
-//       const newImport = buildImport({
-//         SOURCE: path.parentPath.node.arguments,
-//       });
-//       path.parentPath.replaceWith(newImport);
-//     },
-//   },
-// });
-
-// module.exports.baseDir = function() {
-//   return __dirname;
-// };
-

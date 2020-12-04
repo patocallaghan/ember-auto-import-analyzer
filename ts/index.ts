@@ -1,5 +1,4 @@
 import AutoImport from './auto-import';
-// import { Tree } from 'broccoli-plugin';
 
 module.exports = {
   name: 'ember-auto-import',
@@ -11,15 +10,6 @@ module.exports = {
     if (type !== 'parent') {
       return;
     }
-
-    // This is where we hook our analyzer into the build pipeline so
-    // it will see all the consumer app or addon's javascript
-    // registry.add('js', {
-    //   name: 'ember-auto-import-analyzer',
-    //   toTree: (tree: Tree) => {
-    //     return AutoImport.lookup(this).analyze(tree, this);
-    //   }
-    // });
   },
 
   included() {
